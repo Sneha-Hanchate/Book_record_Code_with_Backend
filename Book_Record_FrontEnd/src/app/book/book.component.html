@@ -1,0 +1,48 @@
+<mat-icon routerLink="/view-card">home</mat-icon>
+<div class="col-md-8 offset-md-2 " id="loginn" >
+<h3>Write Book Record </h3>
+<form [formGroup]="signupForm" (ngSubmit)="onSignup()">
+      <div class="form-group ">
+
+          <div class="controls">
+          <label>Book Name:<span class="lblError"> *</span></label>
+              <input type="text" formControlName="name" placeholder="Your answer">
+              <p *ngIf="signupForm.get('name').hasError('required') && !signupForm.get('name').pristine "
+          class="lblError">Book Name is required</p>
+          </div>
+      </div>
+      <div class="form-group ">
+
+          <div class="controls">
+          <label>Book Writer:<span class="lblError"> *</span></label>
+              <input type="text" formControlName="writer" placeholder="Your answer">
+               <p *ngIf="signupForm.get('writer').hasError('required') && !signupForm.get('writer').pristine "
+          class="lblError">Book Writer is required</p>
+          </div>
+      </div>
+      <div class="form-group ">
+
+          <div class="controls">
+          <label>Book Pages:<span class="lblError"> *</span></label>
+              <input type="number" formControlName="pages" placeholder="Your answer">
+               <p *ngIf="signupForm.get('pages').hasError('required') && !signupForm.get('pages').pristine "
+          class="lblError">Book Pages is required</p>
+          </div>
+      </div>
+      <div class="form-group ">
+
+          <div class="controls">
+          <label>Book Price:<span class="lblError"> *</span></label>
+              <input type="text" formControlName="price" placeholder="Your answer">
+               <p *ngIf="signupForm.get('price').hasError('required') && !signupForm.get('price').pristine "
+          class="lblError">Book Price is required</p>
+          </div>
+      </div>
+
+      <button type="submit" [disabled]="signupForm.invalid">Submit</button>
+      <button routerLink="/all-book" >View All Book</button>
+      <button id="btn2" routerLink="/">Logout</button>
+
+</form>
+</div>
+

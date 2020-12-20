@@ -1,0 +1,37 @@
+#wel{
+  color: #00ACC1;
+  font-size:3rem;
+  text-align: center;
+}
+#card1{
+
+  font-size: 2rem;
+  margin-top: 20%;
+}
+#card3{
+
+  font-size: 2rem;
+  margin-top: 20%;
+}
+#card2{
+  font-size: 2rem;
+  margin-top: 20%;
+}
+.card{
+  margin: 5%;
+  height: 10rem;
+  width: 15rem;
+  background-color: #F50057;
+  color: white;
+  text-align: center;
+}
+.card:hover{
+background-color: teal;
+}
+button{
+  text-align: center;
+  font-weight: bold;
+  padding: 1%;
+  margin-left: 90%;
+
+}
